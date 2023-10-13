@@ -12,6 +12,9 @@ const io = socketio(server)
 
 const port = process.env.PORT || 8080
 const publicDirectoryPath = path.join(__dirname, '../public')
+app.get('/', (req, res) => {
+    res.send('Listening...')
+  })
 
 app.use(express.static(publicDirectoryPath))
 
