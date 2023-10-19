@@ -1,7 +1,5 @@
 const myDate = new Date()
 
-
-
 const generateMessage = (username, text) => {
   return {
     username, 
